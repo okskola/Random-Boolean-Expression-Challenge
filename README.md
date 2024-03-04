@@ -11,10 +11,8 @@ There are 3 levels of complexity and users must achieve a sequence of 10 correct
 The code randomly (using recursion) generates different boolean expressions with **and**, **or** and **not** operators, which are combined with parentheses.
 For example: *(((False and False) or not (False or False)) and ((True and not False) and not (not False and False)))*
 
-The project seems very simple, but it actually took me multiple hours to create the code and fix the errors. It was also tested on students and they took the task with enthusiasm.
-
 One complexity was to create three functions whcih can be tested with pytest, because I can not imagina how to meaningfully test a function which generates random output or
-how to test input() using assert. So I made folowing functions:
+how to test input() using assert. So I made the folowing functions:
 - generate(depth, complexity): randomly generates boolean expressions
 - get_input(): gets correct input from the user
 - calc_success_rate(success, tries): calculates success rate by dividing success by tries, in percentage
